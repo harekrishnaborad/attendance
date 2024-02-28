@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+    }
+    
+    .container {
+        width: 300px;
+        margin: 100px auto;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        text-align: center;
+        color: #ff7f50;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+        background-color: #ff7f50;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #ff6347;
+    }
+
+    .forgot-password,
+    .register {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .forgot-password a,
+    .register a {
+        color: #ff7f50;
+        text-decoration: none;
+    }
+
+    .forgot-password a:hover,
+    .register a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login</h2>
+    <form action="#">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <input type="submit" value="Login">
+    </form>
+    <div class="forgot-password">
+        <a href="forgotpwd.html">Forgot Password?</a>
+    </div>
+    <div class="register">
+        <a href="register.html">Register</a>
+    </div>
+</div>
+
+</body>
+</html>
