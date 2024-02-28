@@ -1,63 +1,45 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-      <!--=============== REMIXICONS ===============-->
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-      <!--=============== CSS ===============-->
-      <style>
-         
-      </style>
-      <link rel="stylesheet" href="../css/login.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
 
-      <title>MU in Code-M login form</title>
-   </head>
-   <body>
-      <div class="login">
-         <img src="../img/login-bg.png" alt="login image" class="login__img">
+<body>
+    <form id="container" class="container" action="index.html" method="get">
+        <h1>Login</h1>
 
-         <form action="" class="login__form">
-            <h1 class="login__title">login</h1>
+        <div class="input_box">
+            <input type="text" placeholder="Username" name="Username" id="Username" required>
+            <i class='bx bxs-user'></i>
+            <p class="error_message">error message</p>
+        </div>
 
-            <div class="login__content">
-               <div class="login__box">
-                  <i class='bx bxs-envelope'></i>
+        <div class="input_box">
+            <input type="password" placeholder="password" name="password" id="password" required>
+            <i class='bx bxs-lock-alt'></i>
+            <p class="error_message">error message</p>
+        </div>
 
-                  <div class="login__box-input">
-                     <input type="email" required class="login__input" placeholder="">
-                     <label for="" class="login__label">Email</label>
-                  </div>
-               </div>
-               <div class="login__box">
-                  <i class='bx bxs-lock-alt'></i>
+        <div class="remember_forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="">Forgot password?</a>
+        </div>
+        
+        <button class="btn" type="submit">Login</button>
 
-                  <div class="login__box-input">
-                     <input type="Password" required class="login__input" id="login-pass" placeholder="">
-                     <label for="" class="login__label">Password</label>
-                     <i class="ri-eye-off-line login__eye" id="login-eye"></i>
-                  </div>
-               </div>
-            </div>
-            <div class="login__check">
-               <div class="login__check-group">
-                  <input type="checkbox" class="login__check-input">
-                  <label for="" class="login__check-label">Remember me</label>
-               </div>
+        <div class="register_link">
+            <p>Dont have an account ? <a href="../register.html">Register</a></p>
+        </div>
 
-               <a href="#" class="login__forgot">Forgot Password?</a>
-            </div>
+    </form>
 
-            <button class="login__button">Login</button>
+    <script src="../js/login.js" type="module"></script>
+</body>
 
-            <p class="login__register">
-               Don't have an account? <a href="../register.html">Register</a>
-            </p>
-         </form>
-      </div>
-      <!--=============== MAIN JS ===============-->
-      <script src="../js/login.js"></script>
-   </body>
 </html>
